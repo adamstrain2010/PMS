@@ -1,0 +1,12 @@
+@import './../../../../styles.scss';
+
+$standard-font-size: 1rem;
+
+h4{
+    font-size: $standard-font-size;
+    text-transform: capitalize;
+}
+
+h5{
+    font-size: $standard-font-size * 0.8;
+}

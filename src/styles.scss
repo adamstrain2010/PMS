@@ -1,0 +1,46 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import './variables.scss';
+@font-face{
+    font-family: 'Lateros';
+    src: url('/assets/fonts/bebasneue-bold-webfont.woff2') format('woff2'), 
+         url('/assets/fonts/bebasneue-bold-webfont.woff') format('woff')
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body, html{
+    margin: 0;
+    padding:0;
+    height: 100%;
+    min-height: 100%;
+}
+
+.logoFont{
+    font-family: 'Lateros', sans-serif;
+    color: $primary;
+}
+
+.smallLogo{
+    font-size: 2rem;
+}
+
+.largeLogo{
+    font-size: 4rem;
+}
+
+.subtext{
+    font-size: 1.4rem;
+    color: $secondary;
+    font-family: Montserrat, sans-serif;
+}
+
+.primary-background{
+    background-color: $primary;
+}
+
+.back-secondary{
+    background-color: $secondary;
+}
+
+.dark-border-bottom{
+    border-bottom: thin solid darkgrey;
+}

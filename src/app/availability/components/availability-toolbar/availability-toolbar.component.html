@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-2">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">From</span>  
+            </div>
+        <input type="date" class="form-control" [ngModel]="fromDate" value="{{fromDate}}" (ngModelChange)="fromDate = $event; setAvailability()">
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">To</span>  
+            </div>
+            <input type="date" class="form-control" [ngModel]="toDate" value="{{toDate}}" (ngModelChange)="toDate = $event; setAvailability()">
+        </div>
+    </div>
+</div>

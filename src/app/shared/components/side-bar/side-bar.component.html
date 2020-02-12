@@ -1,0 +1,22 @@
+<div class="side-bar w-100 h-100 primary-background">
+    <div class="row h-100">
+        <div class="col h-100">
+            <div class="nav-container p-3">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="logoFont smallLogo text-white">Lateros</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <ul class="mx-0 px-0">
+                            <li *ngFor="let link of navLinks">
+                                <a [routerLink]="[link.path]">{{link.label}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="container-fluid h-100 mx-0 px-0">
+  <div class="row h-100 mx-0 px-0">
+    <div [ngClass]="!_mockService.loggedIn ? '' : 'col-2 h-100 mx-0 px-0'">
+        <app-side-bar *ngIf="_mockService.loggedIn"></app-side-bar>
+    </div>
+    <div [ngClass]="!_mockService.loggedIn ? 'col-12 h-100 mx-0 px-0' : 'col-10 h-100 mx-0 px-0'">
+      <app-header *ngIf="_mockService.loggedIn" [title]="currentRoute"></app-header>
+      <router-outlet (activate)="checkLoggedIn()"></router-outlet>
+    </div>
+  </div>
+</div>
